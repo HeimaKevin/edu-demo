@@ -1,0 +1,90 @@
+.reasons {
+  padding: 54px 0 66px;
+  background: url('../image/reasons-bg.png') no-repeat;
+  background-size: cover;
+  &-body {
+    width: 1400px;
+    margin: 0 auto;
+    &_title {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      color: $black;
+      span {
+        color: $primary;
+      }
+    }
+    &_subscript {
+      font-size: 18px;
+      text-align: center;
+    }
+    &-advantages {
+      margin-top: 24px;
+      margin-bottom: 20px;
+      @include flex(space-between, start);
+      &_box {
+        position: relative;
+        width: 32%;
+        &-mask {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(#ea9700, 0.8);
+        }
+        &-text {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          p {
+            margin: 16px 26px;
+            padding: 14px 0;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            background-color: $white;
+            span {
+              display: block;
+              font-size: 18px;
+              font-weight: normal;
+            }
+          }
+        }
+        &:hover > &-text {
+          bottom: 0;
+          top: 50%;
+          transform: translateY(-25%);
+          p {
+            color: $white;
+            background-color: transparent;
+          }
+        }
+        &:hover > &-mask {
+          display: block;
+        }
+      }
+    }
+    &_button-more {
+      margin-bottom: 48px;
+      @include flex(center, center);
+    }
+    &_alumni {
+      @include flex(space-between, center);
+      &-box {
+        @include flex(start, end);
+        width: calc((100% - 64px) / 2);
+        &_info {
+          margin-bottom: 15px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &_name {
+          font-size: 16px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

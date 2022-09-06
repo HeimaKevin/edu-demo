@@ -1,0 +1,59 @@
+.ready {
+  height: 460px;
+  overflow: hidden;
+  background: url('../image/footbanner.png') center center no-repeat;
+  background-color: rgba($black, 0.6);
+  background-blend-mode: multiply;
+  &-wrap {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    @include flex(center, start);
+    flex-direction: column;
+  }
+  &-title {
+    margin-bottom: 20px;
+    &_text {
+      color: $white;
+      font-size: 30px;
+      font-weight: bold;
+      span {
+        color: $primary;
+      }
+    }
+    &_small {
+      font-size: 18px;
+      color: $white;
+    }
+  }
+  &-content {
+    width: 100%;
+    @include flex(space-between, start);
+    &_arrow {
+      position: relative;
+      width: 210px;
+      height: 10px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid $white;
+      &::after {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        width: 30px;
+        height: 10px;
+        border-bottom: 1px solid $white;
+        transform-origin: right bottom;
+        transform: rotate(30deg);
+        content: '';
+      }
+      & + p {
+        text-align: right;
+      }
+    }
+    p {
+      color: $white;
+      font-size: 16px;
+    }
+  }
+}

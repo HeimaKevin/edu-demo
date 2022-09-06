@@ -1,0 +1,22 @@
+.explore {
+  @include flex(center, center);
+  padding: 36px 0;
+  background-color: $primary;
+  button {
+    padding: 14px 90px;
+    font-size: 18px;
+    color: $black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: $white;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+      border-color: $white;
+      background-color: $primary;
+    }
+    &:nth-child(2) {
+      margin: 0 26px;
+    }
+  }
+}

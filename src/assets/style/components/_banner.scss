@@ -1,0 +1,98 @@
+.banner {
+  position: relative;
+  &-img {
+    position: relative;
+    filter: brightness(0.5);
+    &_title {
+      @include flex(start, center);
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $white;
+      transform: translate(-50%, -50%);
+      img {
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 40px;
+        color: $white;
+      }
+    }
+  }
+  &-navList {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &_menu {
+      @include flex(center, center);
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #383838;
+      cursor: pointer;
+      ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 16px 0;
+        background-color: #ea9700;
+        li {
+          a {
+            @include flex(start, center);
+            position: relative;
+            padding: 22px 56px 16px 44px;
+            p {
+              font-size: 20px;
+              color: $white;
+              white-space: nowrap;
+            }
+            img {
+              display: none;
+              position: absolute;
+              left: 20px;
+            }
+            &:hover {
+              background-color: $white;
+            }
+            &:hover > p {
+              color: $black;
+            }
+            &:hover > img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    &_logo {
+      @include flex(start, center);
+      width: 100px;
+      height: 100px;
+      background-color: #4a4a4a;
+    }
+  }
+  &-ranking {
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    padding: 36px 28px 55px;
+    background-color: $white;
+    &_title {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding-top: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: $primary;
+      border-top: 1px solid $primary;
+    }
+    &_date {
+      color: $primary;
+    }
+    &_details {
+      font-size: 18px;
+    }
+  }
+}

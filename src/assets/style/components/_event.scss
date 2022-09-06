@@ -1,0 +1,83 @@
+.event-wrap {
+  background: url('../image/watermark.png') 110% -70% no-repeat;
+  .event {
+    width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    padding: 75px 0;
+    &-more {
+      @include flex(space-between, start);
+      flex-direction: column;
+      margin-right: 35px;
+      &_title {
+        color: $black;
+        font-size: 30px;
+        font-weight: bold;
+        span {
+          color: $primary;
+        }
+      }
+      &_small {
+        font-size: 18px;
+      }
+      &_button {
+        padding-left: 45px;
+        padding-right: 45px;
+        white-space: nowrap;
+      }
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      &_item {
+        display: flex;
+        position: relative;
+        width: calc((100% - 96px) / 2);
+        &:nth-child(odd) {
+          margin-right: 96px;
+        }
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 36px;
+        }
+        img {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: -24px;
+          transform: translateY(-50%);
+        }
+        &-date {
+          @include flex(space-between, center);
+          flex-direction: column;
+          margin-right: 24px;
+          padding: 6px 22px;
+          color: $white;
+          background-color: $primary;
+          .week {
+            font-size: 15px;
+          }
+          .date {
+            font-size: 30px;
+            font-weight: bold;
+          }
+          .month {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+        p {
+          line-height: 25px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        &:hover > p {
+          color: $primary;
+        }
+        &:hover > img {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+$primary: #ea9700;
+$white: #ffffff;
+$black: #000000;
+$gray: #d5d5d5;
+
+@mixin flex($justify_content, $align_items) {
+  display: flex;
+  justify-content: $justify_content;
+  align-items: $align_items;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+p {
+  margin: 0;
+}
