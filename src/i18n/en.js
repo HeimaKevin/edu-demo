@@ -65,6 +65,10 @@ const en = {
     siteMap: 'Site Map',
     teaching: 'Teaching Staff',
   },
+  ready: {
+    content:
+      'Our goal is to nurture people with knowledge and moral character, who can practice and contribute to society through lifelong learning. Welcome to Chang Gung University.',
+  },
 }
 
 export default en

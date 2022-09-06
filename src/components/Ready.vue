@@ -7,7 +7,7 @@
       </div>
       <div class="ready-content">
         <div>
-          <p>以培育知識與德行兼備，能身體力行、終身學習、貢獻社會的人才為教育目標。歡迎來到長庚大學。</p>
+          <p>{{ $t('ready.content') }}</p>
         </div>
         <div>
           <div class="ready-content_arrow" />

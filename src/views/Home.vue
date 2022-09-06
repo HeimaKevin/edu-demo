@@ -11,6 +11,7 @@
     <Event />
     <Awards />
     <Feature />
+    <Video />
     <Ready />
   </div>
 </template>
@@ -22,10 +23,11 @@ import Reasons from '@/components/Reasons.vue'
 import Event from '@/components/Event.vue'
 import Awards from '@/components/Awards.vue'
 import Feature from '@/components/Feature.vue'
+import Video from '@/components/Video.vue'
 import Ready from '@/components/Ready.vue'
 
 export default {
   name: 'HomePage',
-  components: { Navbar, Banner, Reasons, Event, Awards, Feature, Ready },
+  components: { Navbar, Banner, Reasons, Event, Awards, Feature, Ready, Video },
 }
 </script>

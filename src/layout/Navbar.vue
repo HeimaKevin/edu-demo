@@ -40,7 +40,6 @@
 <script>
 export default {
   name: 'NavbarLayout',
-  data: () => ({}),
   computed: {
     identityList() {
       return [

@@ -56,6 +56,9 @@ const cn = {
     siteMap: '網站導覽',
     teaching: '教職員',
   },
+  ready: {
+    content: '以培育知識與德行兼備，能身體力行、終身學習、貢獻社會的人才為教育目標。歡迎來到長庚大學。',
+  },
 }
 
 export default cn

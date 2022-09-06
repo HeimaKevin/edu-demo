@@ -1,0 +1,69 @@
+.video {
+  position: relative;
+  &-style {
+    position: absolute;
+    width: 700px;
+    height: 52px;
+    top: 30px;
+    right: 0;
+    background-color: #f7c873;
+    clip-path: polygon(100% 0, 0 30%, 100% 100%);
+    z-index: 2;
+  }
+  &-wrap {
+    min-height: 500px;
+    background-color: #fcf4ed;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    &_body {
+      width: 1650px;
+      margin: 0 auto;
+      padding: 60px 0;
+      &-title {
+        margin-bottom: 54px;
+        text-align: center;
+        &_text {
+          color: $black;
+          font-size: 30px;
+          font-weight: bold;
+          span {
+            color: $primary;
+          }
+        }
+        &_small {
+          font-size: 18px;
+          color: $black;
+        }
+      }
+    }
+    &_list {
+      display: flex;
+      width: 1650px;
+      margin-bottom: 24px;
+      &-item {
+        width: 33.3%;
+        position: relative;
+        &-image {
+          width: 100%;
+          filter: opacity(0.6);
+        }
+        .active {
+          position: relative;
+          top: -32px;
+          filter: opacity(1);
+        }
+        &-start {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &_control {
+      @include flex(center, center);
+      &-button {
+        margin: 0 278px;
+      }
+    }
+  }
+}
