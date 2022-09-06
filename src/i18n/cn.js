@@ -1,4 +1,5 @@
 const cn = {
+  accessibility: '本網站內以任何媒體呈現之所有內容，包括文字、音訊、視訊及版面設計，其著作權屬長庚大學。任何形式之轉載，請先經著作權人允許。',
   advantages: {
     youth: '陽光青年',
     innovation: '創新創意',
@@ -44,6 +45,14 @@ const cn = {
     features: '產創特色',
     research: '研究特色',
     teaching: '教學特色',
+  },
+  footer: {
+    service: '服務資源',
+    serviceList: ['校務資訊系統', '長庚大學行事曆', '長庚校訊', '榮譽消息', '規章辦法搜尋網', '校運會暨親子日'],
+    publicInfo: '公開資訊',
+    publicInfoList: ['校務及財務資訊公開', '教育部整體發展獎補助', '高等教育深耕計畫', '學雜費收費標準', '學雜費調整資訊公告'],
+    advocacy: '宣導網',
+    advocacyList: ['個人資料保護', '交通安全專區', '性別平等教育委員會', '智慧財產權宣導網', '節約能資源', '網路資源'],
   },
   navbar: {
     alumni: '畢業校友',

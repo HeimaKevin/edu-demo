@@ -13,6 +13,7 @@
     <Feature />
     <Video />
     <Ready />
+    <Footer />
   </div>
 </template>
 
@@ -25,9 +26,10 @@ import Awards from '@/components/Awards.vue'
 import Feature from '@/components/Feature.vue'
 import Video from '@/components/Video.vue'
 import Ready from '@/components/Ready.vue'
+import Footer from '@/layout/Footer.vue'
 
 export default {
   name: 'HomePage',
-  components: { Navbar, Banner, Reasons, Event, Awards, Feature, Ready, Video },
+  components: { Navbar, Banner, Reasons, Event, Awards, Feature, Ready, Video, Footer },
 }
 </script>

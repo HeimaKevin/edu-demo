@@ -1,4 +1,6 @@
 const en = {
+  accessibility:
+    'All content on this website in any media, including text, audio, video and layout, is the copyright of Chang Gung University. Permission to reproduce in any form must be obtained from the copyright owner.',
   advantages: {
     youth: 'Sunshine youth',
     innovation: 'Innovation & Creativity',
@@ -53,6 +55,34 @@ const en = {
     features: 'Features',
     research: 'Research Features',
     teaching: 'Teaching Features',
+  },
+  footer: {
+    service: 'Service Resources',
+    serviceList: [
+      'Campus Information System',
+      'Chang Gung University Calendar',
+      'Chang Gung University News',
+      'Honours News',
+      'Rules and Regulations Search',
+      'School Sports Day and Parent-Child Day',
+    ],
+    publicInfo: 'Public Information',
+    publicInfoList: [
+      'Disclosure of School Affairs and Financial Information',
+      'Ministry of Education Block Grant',
+      'Higher Education Development Plan',
+      'Tuition and Fees',
+      'Tuition and Fees Adjustment Information Bulletin',
+    ],
+    advocacy: 'Advocacy Network',
+    advocacyList: [
+      'Personal Data Protection',
+      'Traffic Safety Zone',
+      'Gender Equality Education Committee',
+      'Intellectual Property Rights Advocacy Network',
+      'Energy Conservation Resources',
+      'Internet Resources',
+    ],
   },
   navbar: {
     alumni: 'Alumni',
