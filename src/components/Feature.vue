@@ -6,13 +6,12 @@
         <p v-if="lang === 'cn'" class="feature-body_subscript">發展重點與特色</p>
       </div>
       <ul class="feature-body_list">
-        <li class="feature-body_item" v-for="(feature, index) in featureList" :key="index">
+        <li :class="`feature-body_item rotation-in_${index}`" v-for="(feature, index) in featureList" :key="index">
           <img class="feature-body_item-bg" src="@/assets/image/img_triangle.png" alt="" />
           <div class="feature-body_item-content">
             <img :src="require(`@/assets/image/${feature.img}`)" alt="" />
             <p>{{ feature.text }}</p>
           </div>
-          <div class="feature-body_item-bar" />
         </li>
       </ul>
     </div>
@@ -33,6 +32,20 @@ export default {
         { text: this.$t('feature.research'), img: 'icon_research.png' },
         { text: this.$t('feature.features'), img: 'icon_features.png' },
       ]
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.getTransform)
+  },
+  methods: {
+    getTransform() {
+      const triangleList = document.querySelectorAll('.feature-body_item')
+      const windowTop = window.scrollY
+      const windowBottom = window.scrollY + window.innerHeight
+      triangleList.forEach((triangle) => {
+        let boxSide = triangle.offsetTop + triangle.offsetHeight / 4
+        if (boxSide < windowBottom && boxSide > windowTop) triangle.classList.add('active')
+      })
     },
   },
 }
