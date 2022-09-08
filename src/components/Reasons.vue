@@ -65,7 +65,6 @@ export default {
       const windowBottom = window.scrollY + window.innerHeight
       boxList.forEach((box) => {
         let boxSide = box.offsetTop + box.offsetHeight / 2
-        console.log(boxSide, windowTop, windowBottom)
         if (boxSide < windowBottom && boxSide > windowTop) box.classList.add('active')
       })
     },
