@@ -45,10 +45,13 @@
         &-image {
           width: 100%;
           filter: opacity(0.6);
+          transition: all 0.3s;
         }
-        .active {
+        &:hover {
           position: relative;
           top: -32px;
+        }
+        &:hover > &-image {
           filter: opacity(1);
         }
         &-start {
