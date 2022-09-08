@@ -11,7 +11,7 @@ Vue.use(VueI18n)
 Vue.config.productionTip = false
 
 const i18n = new VueI18n({
-  locale: localStorage.getItem('lang') || 'zh',
+  locale: localStorage.getItem('lang') || 'cn',
   messages,
 })
 

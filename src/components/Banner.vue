@@ -1,6 +1,7 @@
 <template>
   <div class="banner">
-    <img class="banner-img" src="@/assets/image/banner.png" alt="banner" width="100%" />
+    <!-- <img class="banner-img" src="@/assets/image/banner.png" alt="banner" width="100%" /> -->
+    <video class="banner-video" autoplay muted loop src="@/assets/video/info.mp4"></video>
     <section class="banner-img_title">
       <img src="@/assets/image/banner-logo.png" alt="banner-big-logo" />
       <img src="@/assets/image/banner-name.png" alt="banner-name" />

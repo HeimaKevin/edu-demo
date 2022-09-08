@@ -20,6 +20,9 @@
       }
     }
   }
+  &-video {
+    min-width: 100%;
+  }
   &-navList {
     display: flex;
     position: absolute;
