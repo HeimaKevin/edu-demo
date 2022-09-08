@@ -2,7 +2,7 @@
   <div class="banner">
     <!-- <img class="banner-img" src="@/assets/image/banner.png" alt="banner" width="100%" /> -->
     <video class="banner-video" autoplay muted loop src="@/assets/video/info.mp4"></video>
-    <section class="banner-img_title">
+    <section class="banner-video_title">
       <img src="@/assets/image/banner-logo.png" alt="banner-big-logo" />
       <img src="@/assets/image/banner-name.png" alt="banner-name" />
       <p>Launch your future at CGU</p>
@@ -25,11 +25,11 @@
         </div>
       </div>
     </section>
-    <section class="banner-ranking">
+    <!-- <section class="banner-ranking">
       <span class="banner-ranking_title">TOPICS</span>
       <p class="banner-ranking_date">2022-08-18</p>
       <p class="banner-ranking_details">2022-23 {{ $t('banner.ranking') }}</p>
-    </section>
+    </section> -->
   </div>
 </template>
 

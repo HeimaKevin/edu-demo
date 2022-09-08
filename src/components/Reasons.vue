@@ -4,7 +4,7 @@
       <p class="reasons-body_title"><span>W</span>HY CHOOSE CGU?</p>
       <p v-if="lang === 'cn'" class="reasons-body_subscript">為什麼選擇長庚大學?</p>
       <div class="reasons-body-advantages">
-        <div v-for="(advantages, index) in advantagesList" :key="index" class="reasons-body-advantages_box">
+        <div v-for="(advantages, index) in advantagesList" :key="index" :class="`reasons-body-advantages_box slide-${index}`">
           <div class="reasons-body-advantages_box-mask"></div>
           <img :src="require(`@/assets/image/${advantages.img}`)" alt="" width="100%" />
           <div class="reasons-body-advantages_box-text">
@@ -53,6 +53,21 @@ export default {
         { info: this.$t('alumni.wongTaiHungContent'), name: this.$t('alumni.wongTaiHung'), dep: this.$t('alumni.department'), img: 'alumni_01.png' },
         { info: this.$t('alumni.wangXuanContent'), name: this.$t('alumni.wangXuan'), dep: this.$t('alumni.department'), img: 'alumni_02.png' },
       ]
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.getTransform)
+  },
+  methods: {
+    getTransform() {
+      const boxList = document.querySelectorAll('.reasons-body-advantages_box')
+      const windowTop = window.scrollY
+      const windowBottom = window.scrollY + window.innerHeight
+      boxList.forEach((box) => {
+        let boxSide = box.offsetTop + box.offsetHeight / 2
+        console.log(boxSide, windowTop, windowBottom)
+        if (boxSide < windowBottom && boxSide > windowTop) box.classList.add('active')
+      })
     },
   },
 }
