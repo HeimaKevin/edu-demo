@@ -1,4 +1,4 @@
-# cnang-gung_demo
+# edu-demo
 
 ## Project setup
 ```
