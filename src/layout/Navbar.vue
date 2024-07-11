@@ -1,35 +1,23 @@
 <template>
   <div class="navbar">
     <div class="navbar-wrap">
-      <div class="navbar-wrap-identity">
-        <p>{{ $t('navbar.identity') }}</p>
-        <ul class="navbar-wrap-identity-list">
-          <li v-for="identity in identityList" :key="identity.text">
-            <img class="navbar-wrap-identity-list_imgIn" :src="require(`@/assets/image/${identity.imgIn}`)" alt="identity-icon" width="18px" />
-            <img class="navbar-wrap-identity-list_imgOut" :src="require(`@/assets/image/${identity.imgOut}`)" alt="identity-icon" width="18px" />
-            <p>{{ identity.text }}</p>
-          </li>
-        </ul>
-      </div>
+      <a href="#">
+        <img src="@/assets/image/img_headerLogo.png" alt="頭部圖標" />
+      </a>
       <ul class="navbar-wrap-navigation">
-        <li>
+        <li v-for="(item, i) in navList" :key="i">
           <a href="#">
-            <span>{{ $t('navbar.siteMap') }}</span>
+            <span>{{ item.text }}</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <span>{{ $t('navbar.mobileApp') }}</span>
-          </a>
-        </li>
-        <li>
+        <li v-if="lang === 'cn'">
           <a href="#" @click.prevent="changeLang('en')">
-            <span>EN</span>
+            <span>English</span>
           </a>
         </li>
-        <li>
+        <li v-else>
           <a href="#" @click.prevent="changeLang('cn')">
-            <span>繁</span>
+            <span>中</span>
           </a>
         </li>
       </ul>
@@ -38,18 +26,24 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'NavbarLayout',
   computed: {
-    identityList() {
+    ...mapState({
+      lang: (state) => state.lang,
+    }),
+    navList() {
       return [
-        { imgIn: 'icon-highSchool.png', imgOut: 'icon-highSchool_active.png', text: this.$t('navbar.highSchool') },
-        { imgIn: 'icon-newStudent.png', imgOut: 'icon-newStudent_active.png', text: this.$t('navbar.newStudent') },
-        { imgIn: 'icon-currentStudents.png', imgOut: 'icon-currentStudents_active.png', text: this.$t('navbar.currentStudents') },
-        { imgIn: 'icon-teaching.png', imgOut: 'icon-teaching_active.png', text: this.$t('navbar.teaching') },
-        { imgIn: 'icon-alumni.png', imgOut: 'icon-alumni_active.png', text: this.$t('navbar.alumni') },
-        { imgIn: 'icon-mediaVisitors.png', imgOut: 'icon-mediaVisitors_active.png', text: this.$t('navbar.mediaVisitors') },
-        { imgIn: 'icon-internationalStudents.png', imgOut: 'icon-internationalStudents_active.png', text: 'International Students' },
+        { text: this.$t('navbar.nav_01') },
+        { text: this.$t('navbar.nav_02') },
+        { text: this.$t('navbar.nav_03') },
+        { text: this.$t('navbar.nav_04') },
+        { text: this.$t('navbar.nav_05') },
+        { text: this.$t('navbar.nav_06') },
+        { text: this.$t('navbar.nav_07') },
+        { text: this.$t('navbar.nav_08') },
       ]
     },
   },

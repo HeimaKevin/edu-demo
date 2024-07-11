@@ -1,22 +1,27 @@
 .explore {
-  @include flex(center, center);
-  padding: 36px 0;
+  padding: 36px 20px;
   background-color: $primary;
-  button {
-    padding: 14px 90px;
-    font-size: 18px;
-    color: $black;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    background-color: $white;
-    cursor: pointer;
-    &:hover {
-      color: $white;
-      border-color: $white;
-      background-color: $primary;
-    }
-    &:nth-child(2) {
-      margin: 0 26px;
+  .btn-list {
+    margin: 0 auto;
+    width: min(100%, 1400px);
+
+    @include flex(center, center);
+    button {
+      padding: 14px 90px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      background-color: $white;
+      color: $black;
+      font-size: 18px;
+      cursor: pointer;
+      &:hover {
+        border-color: $white;
+        background-color: $primary;
+        color: $white;
+      }
+      &:nth-child(2) {
+        margin: 0 26px;
+      }
     }
   }
 }

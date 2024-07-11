@@ -1,15 +1,18 @@
 .feature {
+  overflow: hidden;
   padding-top: 80px;
   padding-bottom: 64px;
   background-color: $white;
   &-body {
-    @include flex(space-between, start);
     margin: 0 auto;
-    width: 1400px;
+    padding: 0 20px;
+    width: min(100%, 1400px);
+
+    @include flex(space-between, start);
     &_title {
-      font-size: 30px;
-      font-weight: bold;
       color: $black;
+      font-weight: bold;
+      font-size: 30px;
       span {
         color: $primary;
       }
@@ -23,23 +26,23 @@
     .rotation-in {
       &_0 {
         opacity: 0;
-        transform: translateX(400%) rotate(360deg);
         transition: all 0.9s;
+        transform: translateX(400%) rotate(360deg);
       }
       &_1 {
         opacity: 0;
-        transform: translateX(300%) rotate(360deg);
         transition: all 1.2s;
+        transform: translateX(300%) rotate(360deg);
       }
       &_2 {
         opacity: 0;
-        transform: translateX(200%) rotate(360deg);
         transition: all 1.5s;
+        transform: translateX(200%) rotate(360deg);
       }
       &_3 {
         opacity: 0;
-        transform: translateX(100%) rotate(360deg);
         transition: all 1.8s;
+        transform: translateX(100%) rotate(360deg);
       }
     }
     .rotation-in_0.active,
@@ -62,16 +65,17 @@
         display: block;
         width: 60px;
         height: 50%;
-        content: '';
         border-bottom: 1px solid #dddad3;
+        content: '';
       }
       &-content {
         position: absolute;
         top: 65%;
         left: 50%;
-        @include flex(center, center);
         flex-direction: column;
         transform: translate(-50%, -50%);
+
+        @include flex(center, center);
         p {
           font-size: 20px;
         }
@@ -80,8 +84,8 @@
         transform: rotate(180deg);
       }
       &:nth-child(even) &-content {
-        flex-direction: column-reverse;
         top: 35%;
+        flex-direction: column-reverse;
       }
       &:last-child {
         margin: 0;

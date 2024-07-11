@@ -1,6 +1,6 @@
 <template>
   <section class="video">
-    <div class="video-style" />
+    <!-- <div class="video-style" /> -->
     <div class="video-wrap">
       <div class="video-wrap_body">
         <div class="video-wrap_body-title">

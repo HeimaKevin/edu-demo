@@ -3,10 +3,10 @@
     <li
       v-for="(award, index) in awardList"
       :key="index"
-      :class="[`award award-img-${index}`, index === 2 ? 'award-open' : 'award-mask']"
+      :class="[`award award-img-${index}`, index === 0 ? 'award-open' : 'award-mask']"
       @click.prevent="Expand($event, award)"
     >
-      <p :class="{ 'award-content': index === 2 }">{{ award.content }}</p>
+      <p :class="{ 'award-content': index === 0 }">{{ award.content }}</p>
     </li>
   </ul>
 </template>

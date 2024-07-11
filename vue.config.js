@@ -4,8 +4,12 @@ module.exports = {
   // 因此需要多設置該屬性
   // 官方文件：https://cli.vuejs.org/zh/config/#publicpath
   publicPath: './',
+  transpileDependencies: true,
+  productionSourceMap: process.env.NODE_ENV !== 'production',
 }
 
 // module.exports = {
-//   publicPath: process.env.NODE_ENV === 'production' ? '/production-sub-path/' : './',
+//   transpileDependencies: true,
+//   publicPath: process.env.NODE_ENV === 'production' ? '/edu-demo/' : './',
+//   productionSourceMap: process.env.NODE_ENV !== 'production',
 // }

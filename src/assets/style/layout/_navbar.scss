@@ -2,62 +2,18 @@
   width: 100%;
   background-color: $primary;
   &-wrap {
-    @include flex(space-between, center);
     margin: 0 auto;
-    width: 1400px;
-    &-identity {
-      position: relative;
-      padding: 10px 0;
-      color: $white;
-      cursor: pointer;
-      &:hover > &-list {
-        display: block;
-      }
-      &-list {
-        display: none;
-        position: absolute;
-        top: 100%;
-        padding: 14px;
-        background-color: $white;
-        z-index: 10;
-        li {
-          @include flex(start, center);
-          margin-bottom: 4px;
-          cursor: pointer;
-          .navbar-wrap-identity-list_imgOut {
-            display: none;
-          }
-          p {
-            width: 100%;
-            margin-left: 8px;
-            padding: 8px 0 4px 8px;
-            line-height: 16px;
-            border-bottom: 1px solid $gray;
-            color: $black;
-            white-space: nowrap;
-          }
-          &:last-child p {
-            border: 0;
-          }
-          &:hover > p {
-            color: $primary;
-          }
-          &:hover > .navbar-wrap-identity-list_imgIn {
-            display: none;
-          }
-          &:hover > .navbar-wrap-identity-list_imgOut {
-            display: block;
-          }
-        }
-      }
-    }
+    padding: 12px 20px;
+    width: min(100%, 1400px);
+
+    @include flex(space-between, center);
     &-navigation {
       display: flex;
       li {
         a {
           padding: 10px 0;
-          line-height: 1rem;
           color: $white;
+          line-height: 1rem;
           cursor: pointer;
           span {
             padding: 0 10px;

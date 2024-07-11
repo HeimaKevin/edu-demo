@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    lang: 'cn',
+    lang: localStorage.getItem('lang') || 'cn',
   },
   mutations: {
     LANG(state, payload) {

@@ -1,18 +1,19 @@
 .event-wrap {
-  background: url('../image/watermark.png') 110% -70% no-repeat;
+  // background: url('../image/watermark.png') 110% -70% no-repeat;
   .event {
-    width: 1400px;
     display: flex;
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 75px 20px;
+    width: min(100%, 1400px);
     &-more {
-      @include flex(space-between, start);
       flex-direction: column;
       margin-right: 35px;
+
+      @include flex(space-between, start);
       &_title {
         color: $black;
-        font-size: 30px;
         font-weight: bold;
+        font-size: 30px;
         span {
           color: $primary;
         }
@@ -21,8 +22,8 @@
         font-size: 18px;
       }
       &_button {
-        padding-left: 45px;
         padding-right: 45px;
+        padding-left: 45px;
         white-space: nowrap;
       }
     }
@@ -30,8 +31,8 @@
       display: flex;
       flex-wrap: wrap;
       &_item {
-        display: flex;
         position: relative;
+        display: flex;
         width: calc((100% - 96px) / 2);
         &:nth-child(odd) {
           margin-right: 96px;
@@ -41,34 +42,35 @@
           margin-bottom: 36px;
         }
         img {
-          display: none;
           position: absolute;
           top: 50%;
           left: -24px;
+          display: none;
           transform: translateY(-50%);
         }
         &-date {
-          @include flex(space-between, center);
           flex-direction: column;
           margin-right: 24px;
           padding: 6px 22px;
-          color: $white;
           background-color: $primary;
+          color: $white;
+
+          @include flex(space-between, center);
           .week {
             font-size: 15px;
           }
           .date {
-            font-size: 30px;
             font-weight: bold;
+            font-size: 30px;
           }
           .month {
-            font-size: 16px;
             font-weight: bold;
+            font-size: 16px;
           }
         }
         p {
-          line-height: 25px;
           font-size: 16px;
+          line-height: 25px;
           cursor: pointer;
         }
         &:hover > p {

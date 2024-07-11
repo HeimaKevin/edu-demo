@@ -2,9 +2,9 @@ const en = {
   accessibility:
     'All content on this website in any media, including text, audio, video and layout, is the copyright of Chang Gung University. Permission to reproduce in any form must be obtained from the copyright owner.',
   advantages: {
-    youth: 'Sunshine youth',
-    innovation: 'Innovation & Creativity',
-    interdisciplinary: 'Interdisciplinary',
+    title_01: '傑出工程教授獎',
+    title_02: '傑出工程師獎',
+    title_03: '優秀青年工程師獎',
   },
   alumni: {
     wangXuan: 'Wang Xuan',
@@ -15,40 +15,31 @@ const en = {
     department: 'Department of Transport Technology and Logistics Management',
   },
   awardList: {
-    content_01:
-      "IEEE International Conference on Nanotechnology, Prof. Chang Gung University's Keynote Speech on Nanotechnology and Quantum Computing",
-    content_02: 'No matter how hard it is to say goodbye, the time has come for dreams to fly.',
-    content_03:
-      'Congratulations! The research of our PhD students and professors has been published in a top international journal, Advanced Materials, which will improve the motor and sensory response of prostheses.',
-    content_04:
-      '2023 QS World University Rankings], Chang Gung University remains one of the top 500 universities in the world and one of the top 10 in China!',
-    content_05:
-      "President Ming-Cheh Tang of Chang Gung University (second from right) welcomes the collaboration between the three parties to build up the reliability and technological strength of Taiwan's semiconductor electronics industry.",
+    content_01: 'FEIAP 2024 7th Convention and 1st YTIC',
+    content_02: 'FEIAP 2024 Net Zero Event',
+    content_03: 'FEIAP 2024 Opening Ceremony',
+    content_04: '2023/10/23 The 29th Modern Engineering Technology Symposium (METS)',
+    content_05: '2023/10/10 Participate in the 112th National Day Ceremony',
   },
   banner: {
-    administrative: 'Administrative Services',
-    admissionsInfo: 'Admissions Information',
-    campusInfo: 'Campus Information',
-    corporateMuseum: 'Corporate Heritage Museum',
-    internationalOffice: 'International Affairs Office',
-    library: 'Library',
-    ranking: 'CWUR World University Rankings Chang Gung University is ranked 6th in China',
-    teaching: 'Teaching Research',
+    banner_01: 'About the society',
+    banner_02: 'Important regulations',
+    banner_03: 'Chapter',
+    banner_04: 'Awards selection',
+    banner_05: 'Honor roll',
+    banner_06: 'Publication',
+    banner_07: 'General activities',
   },
   explore: {
-    admissionsInfo: 'Admissions Information',
-    exploreProfession: 'Explore the profession',
-    visitCampus: 'Visit the campus',
+    btn_01: 'Member Centre',
+    btn_02: 'APEC & IPEA',
+    btn_03: 'NCEES exam',
   },
   eventList: {
-    content_01:
-      'Please be informed that the National Health Service of the Ministry of Health and Welfare is organising the "2022 Taiwan Global Health and Wellbeing Forum" and encourages its staff and students to apply for the event.',
-    content_02:
-      'Please be informed that the Taiwan Society for Health Assessment and Promotion is organizing the "2022 International Society for Health Assessment and Promotion Symposium" and encourages all staff to submit papers and register for the event.',
-    content_03:
-      'Please be informed that the School of Management of the University of Global Technology is organising the 20th International Conference on Regional Economic Development in Asia (2022 ICARE) and encourages students and faculty members to submit their contributions.',
-    content_04:
-      'Please be informed that Wufeng University of Science and Technology is organising the "2022 International Conference on Safety Management and Engineering Technology" and encourages its faculty and students to submit papers and participate in the conference.',
+    content_01: 'Guishan Island Marine Environmental Education Visit',
+    content_02: 'Visit to the "Tamkang Bridge" project',
+    content_03: 'Visit to Jade Raw Water Pipe Project',
+    content_04: 'The 4th Young Engineers Exchange and Networking Event-The cross-generational inheritance of outstanding female engineers',
   },
   feature: {
     development: 'Development Features',
@@ -85,15 +76,14 @@ const en = {
     ],
   },
   navbar: {
-    alumni: 'Alumni',
-    currentStudents: 'Current Students',
-    highSchool: 'High school students',
-    identity: 'Identity',
-    mediaVisitors: 'Media Visitors',
-    mobileApp: 'Mobile App',
-    newStudent: 'New Student Admission',
-    siteMap: 'Site Map',
-    teaching: 'Teaching Staff',
+    nav_01: 'Downloads',
+    nav_02: 'UnionPay card online payment',
+    nav_03: 'Credit card online payment',
+    nav_04: 'RSS subscription',
+    nav_05: 'Sitemap',
+    nav_06: 'Contact Us',
+    nav_07: 'Member login',
+    nav_08: 'Websites related to group members',
   },
   ready: {
     content:

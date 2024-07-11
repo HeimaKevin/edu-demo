@@ -5,13 +5,17 @@ $gray: #d5d5d5;
 
 @mixin flex($justify_content, $align_items) {
   display: flex;
-  justify-content: $justify_content;
   align-items: $align_items;
+  justify-content: $justify_content;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 ul {

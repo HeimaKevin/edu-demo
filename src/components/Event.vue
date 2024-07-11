@@ -4,7 +4,7 @@
       <div class="event-more">
         <div>
           <p class="event-more_title"><span>E</span>VENTS</p>
-          <p v-if="lang === 'cn'" class="event-more_small">接下來的活動</p>
+          <p v-if="lang === 'cn'" class="event-more_small">活動</p>
         </div>
         <BorderButton class="event-more_button" />
       </div>
@@ -35,10 +35,10 @@ export default {
     },
     eventList() {
       return [
-        { month: 'AUG', week: 'Thu', date: '25', content: this.$t('eventList.content_01') },
-        { month: 'AUG', week: 'Mon', date: '22', content: this.$t('eventList.content_02') },
-        { month: 'AUG', week: 'Wed', date: '17', content: this.$t('eventList.content_03') },
-        { month: 'AUG', week: 'Tue', date: '09', content: this.$t('eventList.content_04') },
+        { month: 'MAY', week: 'Tue', date: '14', content: this.$t('eventList.content_01') },
+        { month: 'MAR', week: 'Fri', date: '8', content: this.$t('eventList.content_02') },
+        { month: 'NOV', week: 'Tue', date: '28', content: this.$t('eventList.content_03') },
+        { month: 'MAY', week: 'Tue', date: '30', content: this.$t('eventList.content_04') },
       ]
     },
   },

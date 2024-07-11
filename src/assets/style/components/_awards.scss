@@ -1,19 +1,21 @@
 .awards {
-  width: 100%;
   display: flex;
   overflow: hidden;
+  width: 100%;
   .award {
-    flex: 1;
-    @include flex(start, end);
-    height: 538px;
     position: relative;
-    color: $white;
-    background-size: cover;
+    flex: 1;
+    height: 538px;
     background-position: center;
-    transition: flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.3s;
+    background-size: cover;
+    color: $white;
     cursor: pointer;
+    transition: flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.3s;
+
+    @include flex(start, end);
     &-mask {
       background-color: rgba($primary, 0.8);
+
       background-blend-mode: soft-light;
     }
     &-open {
@@ -26,7 +28,7 @@
       background-image: url('../image/award_02.jpg');
     }
     &-img-2 {
-      background-image: url('../image/award_03.png');
+      background-image: url('../image/award_03.jpg');
     }
     &-img-3 {
       background-image: url('../image/award_04.jpg');
@@ -35,17 +37,17 @@
       background-image: url('../image/award_05.jpg');
     }
     p {
-      max-height: 70px;
-      margin: 30px;
-      font-size: 18px;
-      font-weight: bold;
       overflow: hidden;
+      margin: 30px;
+      max-height: 70px;
       text-overflow: ellipsis;
+      font-weight: bold;
+      font-size: 18px;
     }
     &-content {
       padding: 12px;
-      color: $black;
       background-color: $white;
+      color: $black;
     }
   }
 }
