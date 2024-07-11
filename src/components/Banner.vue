@@ -2,7 +2,6 @@
   <div class="banner">
     <div class="banner-img">
       <img src="@/assets/image/banner.jpg" alt="banner" width="100%" />
-      <div class="banner-img_desc">2024 0501 FEIAP Opening Ceremony</div>
     </div>
     <section class="banner-navList">
       <div class="banner-navList_menu" @click.prevent="showMenu = !showMenu">

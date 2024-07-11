@@ -1,12 +1,15 @@
 <template>
   <ul class="awards">
-    <li
+    <!-- <li
       v-for="(award, index) in awardList"
       :key="index"
       :class="[`award award-img-${index}`, index === 0 ? 'award-open' : 'award-mask']"
       @click.prevent="Expand($event, award)"
     >
       <p :class="{ 'award-content': index === 0 }">{{ award.content }}</p>
+    </li> -->
+    <li v-for="(award, index) in awardList" :key="index" :class="`award award-img-${index}`">
+      <p class="award-content">{{ award.content }}</p>
     </li>
   </ul>
 </template>
@@ -14,6 +17,9 @@
 <script>
 export default {
   name: 'AwardsComponent',
+  data: () => ({
+    hoverID: null,
+  }),
   computed: {
     awardList() {
       return [
@@ -26,19 +32,19 @@ export default {
     },
   },
   methods: {
-    Expand(evn) {
-      const list = document.querySelectorAll('.award')
-      const target = evn.target
-      const children = target.children
-      list.forEach((item) => {
-        item.classList.remove('award-open')
-        item.classList.add('award-mask')
-        item.children[0].classList.remove('award-content')
-      })
-      target.classList.add('award-open')
-      target.classList.remove('award-mask')
-      children[0].classList.add('award-content')
-    },
+    // Expand(evn) {
+    //   const list = document.querySelectorAll('.award')
+    //   const target = evn.target
+    //   const children = target.children
+    //   list.forEach((item) => {
+    //     item.classList.remove('award-open')
+    //     item.classList.add('award-mask')
+    //     item.children[0].classList.remove('award-content')
+    //   })
+    //   target.classList.add('award-open')
+    //   target.classList.remove('award-mask')
+    //   children[0].classList.add('award-content')
+    // },
   },
 }
 </script>
